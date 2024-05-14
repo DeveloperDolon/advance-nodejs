@@ -1,1 +1,1 @@
-the quick fox jump voer the lazy dog wshnb,.
+ou can use the DIR command by itself (just type "dir" at the Command Prompt) to list the files and folders in the current directory.

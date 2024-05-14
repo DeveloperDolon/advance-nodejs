@@ -36,4 +36,37 @@ myEmitter.on("birthday", () => {
 myEmitter.on("birthday", (gift) => {
     console.log("I will send a " + gift);
 })
-myEmitter.emit("birthday", "Flower");
+// myEmitter.emit("birthday", "Flower");
+
+
+// stream and buffer learning ------------------<>------------------
+const http = require("http");
+// creating a server using raw node.js
+// const server = http.createServer();
+
+// // server listener
+// server.on("request", (req, res) => {
+//     console.log(req.url, req.method);
+
+//     if(req.url === "/read-file" && req.method === "GET") {  // with this method data will be give to client chanke chanke😂
+//         const readableStream = fs.createReadStream("./read.txt", ); // streamming file read
+
+//         readableStream.on("data", (buff) => { // for start buffering data
+//             res.write(buff);
+//         });
+
+//         readableStream.on("end", () => { // for end the request data
+//             res.end("Data processing done!");
+//         });
+
+//          readableStream.on("error", (err) => {
+                // res.statusCode = 500;
+                // res.end("Something went wrong.");
+//          })
+//     }
+// });
+
+
+server.listen(5000, () => {
+    console.log("Server is listening....")
+})
